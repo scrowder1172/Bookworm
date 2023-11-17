@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct TextEditorExample: View {
+    
+    @State private var textFieldText: String = ""
+    @State private var textEditorText: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                TextField("default text", text: $textFieldText, axis: .vertical)
+                    .textFieldStyle(.roundedBorder)
+                TextEditor(text: $textEditorText)
+                    .border(.black)
+            }
+            .navigationTitle("TextEditor vs TextField")
+        }
     }
 }
 

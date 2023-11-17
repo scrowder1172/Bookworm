@@ -13,6 +13,7 @@
 		526D8EAB2B080B1600DDC5FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526D8EAA2B080B1600DDC5FD /* Preview Assets.xcassets */; };
 		526D8EB32B0813A800DDC5FD /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB22B0813A800DDC5FD /* BindingExample.swift */; };
 		526D8EB52B08190500DDC5FD /* TextEditorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB42B08190500DDC5FD /* TextEditorExample.swift */; };
+		526D8EB72B08313B00DDC5FD /* SwiftDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		526D8EAA2B080B1600DDC5FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		526D8EB22B0813A800DDC5FD /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
 		526D8EB42B08190500DDC5FD /* TextEditorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorExample.swift; sourceTree = "<group>"; };
+		526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				526D8EB22B0813A800DDC5FD /* BindingExample.swift */,
 				526D8EB42B08190500DDC5FD /* TextEditorExample.swift */,
+				526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */,
 			);
 			path = TutorialFiles;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				526D8EB32B0813A800DDC5FD /* BindingExample.swift in Sources */,
 				526D8EB52B08190500DDC5FD /* TextEditorExample.swift in Sources */,
 				526D8EA42B080B1500DDC5FD /* BookwormApp.swift in Sources */,
+				526D8EB72B08313B00DDC5FD /* SwiftDataExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

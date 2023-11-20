@@ -23,6 +23,7 @@ enum Genre: String, Identifiable, CaseIterable {
 struct AddBookView: View {
     
     @Environment(\.modelContext) var modelContext
+    @Environment(\.dismiss) var dismiss
     
     @State private var title: String = ""
     @State private var author: String = ""
@@ -59,6 +60,7 @@ struct AddBookView: View {
                     Button("Save") {
                         let newBook = Book(title: title, author: author, genre: genre.rawValue, review: review, rating: rating)
                         modelContext.insert(newBook)
+                        dismiss()
                     }
                 }
             }.navigationTitle("Add Book")

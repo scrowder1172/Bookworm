@@ -16,7 +16,7 @@ enum Genre: String, Identifiable, CaseIterable {
     case mystery = "Mystery"
     case poetry = "Poetry"
     case romance = "Romance"
-    case thriller = "Thiller"
+    case thriller = "Thriller"
     
 }
 

@@ -54,6 +54,8 @@ struct AddBookView: View {
                             Text(String($0))
                         }
                     }
+                    
+                    RatingView(rating: $rating)
                 }
                 
                 Section {

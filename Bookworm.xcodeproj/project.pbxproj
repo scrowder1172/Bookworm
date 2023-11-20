@@ -18,6 +18,7 @@
 		52AABFC02B0BF5960018B469 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFBF2B0BF5960018B469 /* AddBookView.swift */; };
 		52AABFC22B0C005C0018B469 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFC12B0C005C0018B469 /* RatingView.swift */; };
 		52AABFC42B0C102A0018B469 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFC32B0C102A0018B469 /* EmojiRatingView.swift */; };
+		52AABFC62B0C15630018B469 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFC52B0C15630018B469 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		52AABFBF2B0BF5960018B469 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		52AABFC12B0C005C0018B469 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		52AABFC32B0C102A0018B469 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		52AABFC52B0C15630018B469 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				52AABFBF2B0BF5960018B469 /* AddBookView.swift */,
 				52AABFC12B0C005C0018B469 /* RatingView.swift */,
 				52AABFC32B0C102A0018B469 /* EmojiRatingView.swift */,
+				52AABFC52B0C15630018B469 /* BookDetailView.swift */,
 				526D8EA72B080B1600DDC5FD /* Assets.xcassets */,
 				526D8EB12B08139700DDC5FD /* TutorialFiles */,
 				526D8EA92B080B1600DDC5FD /* Preview Content */,
@@ -168,6 +171,7 @@
 			files = (
 				52AABFC02B0BF5960018B469 /* AddBookView.swift in Sources */,
 				52AABFC42B0C102A0018B469 /* EmojiRatingView.swift in Sources */,
+				52AABFC62B0C15630018B469 /* BookDetailView.swift in Sources */,
 				526D8EA62B080B1500DDC5FD /* ContentView.swift in Sources */,
 				526D8EB32B0813A800DDC5FD /* BindingExample.swift in Sources */,
 				52AABFC22B0C005C0018B469 /* RatingView.swift in Sources */,

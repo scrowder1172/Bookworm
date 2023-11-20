@@ -14,6 +14,7 @@
 		526D8EB32B0813A800DDC5FD /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB22B0813A800DDC5FD /* BindingExample.swift */; };
 		526D8EB52B08190500DDC5FD /* TextEditorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB42B08190500DDC5FD /* TextEditorExample.swift */; };
 		526D8EB72B08313B00DDC5FD /* SwiftDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */; };
+		52AABFBE2B0BF50E0018B469 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFBD2B0BF50E0018B469 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		526D8EB22B0813A800DDC5FD /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
 		526D8EB42B08190500DDC5FD /* TextEditorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorExample.swift; sourceTree = "<group>"; };
 		526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataExample.swift; sourceTree = "<group>"; };
+		52AABFBD2B0BF50E0018B469 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				526D8EA32B080B1500DDC5FD /* BookwormApp.swift */,
 				526D8EA52B080B1500DDC5FD /* ContentView.swift */,
+				52AABFBD2B0BF50E0018B469 /* Book.swift */,
 				526D8EA72B080B1600DDC5FD /* Assets.xcassets */,
 				526D8EB12B08139700DDC5FD /* TutorialFiles */,
 				526D8EA92B080B1600DDC5FD /* Preview Content */,
@@ -156,6 +159,7 @@
 			files = (
 				526D8EA62B080B1500DDC5FD /* ContentView.swift in Sources */,
 				526D8EB32B0813A800DDC5FD /* BindingExample.swift in Sources */,
+				52AABFBE2B0BF50E0018B469 /* Book.swift in Sources */,
 				526D8EB52B08190500DDC5FD /* TextEditorExample.swift in Sources */,
 				526D8EA42B080B1500DDC5FD /* BookwormApp.swift in Sources */,
 				526D8EB72B08313B00DDC5FD /* SwiftDataExample.swift in Sources */,

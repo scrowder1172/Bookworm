@@ -16,6 +16,7 @@
 		526D8EB72B08313B00DDC5FD /* SwiftDataExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */; };
 		52AABFBE2B0BF50E0018B469 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFBD2B0BF50E0018B469 /* Book.swift */; };
 		52AABFC02B0BF5960018B469 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFBF2B0BF5960018B469 /* AddBookView.swift */; };
+		52AABFC22B0C005C0018B469 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AABFC12B0C005C0018B469 /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		526D8EB62B08313B00DDC5FD /* SwiftDataExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataExample.swift; sourceTree = "<group>"; };
 		52AABFBD2B0BF50E0018B469 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		52AABFBF2B0BF5960018B469 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		52AABFC12B0C005C0018B469 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				526D8EA52B080B1500DDC5FD /* ContentView.swift */,
 				52AABFBD2B0BF50E0018B469 /* Book.swift */,
 				52AABFBF2B0BF5960018B469 /* AddBookView.swift */,
+				52AABFC12B0C005C0018B469 /* RatingView.swift */,
 				526D8EA72B080B1600DDC5FD /* Assets.xcassets */,
 				526D8EB12B08139700DDC5FD /* TutorialFiles */,
 				526D8EA92B080B1600DDC5FD /* Preview Content */,
@@ -163,6 +166,7 @@
 				52AABFC02B0BF5960018B469 /* AddBookView.swift in Sources */,
 				526D8EA62B080B1500DDC5FD /* ContentView.swift in Sources */,
 				526D8EB32B0813A800DDC5FD /* BindingExample.swift in Sources */,
+				52AABFC22B0C005C0018B469 /* RatingView.swift in Sources */,
 				52AABFBE2B0BF50E0018B469 /* Book.swift in Sources */,
 				526D8EB52B08190500DDC5FD /* TextEditorExample.swift in Sources */,
 				526D8EA42B080B1500DDC5FD /* BookwormApp.swift in Sources */,

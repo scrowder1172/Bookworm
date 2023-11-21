@@ -71,13 +71,22 @@ struct AddBookView: View {
                         }
                     }
                 }
-            }.navigationTitle("Add Book")
                 .alert("Form Incomplete", isPresented: $formMissingData) {
                     Button("OK") {}
                 } message: {
                     Text("Please complete all fields")
                 }
+            }
+            .navigationTitle("Add Book")
+            .toolbar {
+                ToolbarItem {
+                    Button("Cancel", systemImage: "trash") {
+                        dismiss()
+                    }
+                }
+            }
         }
+                
     }
     
     func validateForm() -> Bool {

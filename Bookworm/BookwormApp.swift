@@ -14,6 +14,6 @@ struct BookwormApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Book.self)
+        .modelContainer(for: [Book.self, Student.self, Teacher.self])
     }
 }

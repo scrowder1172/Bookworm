@@ -19,6 +19,8 @@ struct ContentView: View {
     
     @State private var showingAddScreen: Bool = false
     
+    @State private var showingStudents: Bool = false
+    
     var body: some View {
         NavigationStack {
             List {
@@ -56,6 +58,12 @@ struct ContentView: View {
             .sheet(isPresented: $showingAddScreen) {
                 AddBookView()
             }
+        }
+        Button("See Students") {
+            showingStudents = true
+        }
+        .sheet(isPresented: $showingStudents) {
+            SwiftDataExample()
         }
     }
     

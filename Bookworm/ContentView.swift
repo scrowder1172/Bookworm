@@ -32,6 +32,7 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 Text(book.title)
                                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                    .foregroundStyle(book.rating == 1 ? Color.red : Color.blue)
                                 Text(book.author)
                                     .foregroundStyle(.secondary)
                             }

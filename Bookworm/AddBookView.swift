@@ -32,6 +32,8 @@ struct AddBookView: View {
     
     @State private var genre: Genre = .fantasy
     
+    @State private var formMissingData: Bool = false
+    
     var body: some View {
         NavigationStack {
             Form {
@@ -60,14 +62,30 @@ struct AddBookView: View {
                 
                 Section {
                     Button("Save") {
-                        let newBook = Book(title: title, author: author, genre: genre.rawValue, review: review, rating: rating)
-                        modelContext.insert(newBook)
-                        dismiss()
+                        if validateForm() {
+                            let newBook = Book(title: title, author: author, genre: genre.rawValue, review: review, rating: rating)
+                            modelContext.insert(newBook)
+                            dismiss()
+                        } else {
+                            formMissingData = true
+                        }
                     }
                 }
             }.navigationTitle("Add Book")
-            
+                .alert("Form Incomplete", isPresented: $formMissingData) {
+                    Button("OK") {}
+                } message: {
+                    Text("Please complete all fields")
+                }
         }
+    }
+    
+    func validateForm() -> Bool {
+        guard title.isEmpty == false else {return false}
+        guard author.isEmpty == false else {return false}
+        guard review.isEmpty == false else {return false}
+        
+        return true
     }
 }
 

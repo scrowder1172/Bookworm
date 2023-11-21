@@ -44,6 +44,11 @@ struct BookDetailview: View {
             RatingView(rating: .constant(book.rating))
                 .font(.largeTitle)
             
+            HStack {
+                Text("Date Added:")
+                Text(book.dateFormatted)
+            }
+            
             Button("Go Back") {dismiss()}
         }
         .toolbar {

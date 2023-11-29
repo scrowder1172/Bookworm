@@ -17,6 +17,13 @@ struct ContentView: View {
         SortDescriptor(\Book.title)
     ]) var books: [Book]
     
+    @Query(filter: #Predicate<Book> { $0.author.contains("Stephen")},
+        sort: [
+        SortDescriptor(\Book.rating, order: .reverse),
+        SortDescriptor(\Book.author),
+        SortDescriptor(\Book.title)
+    ]) var stephenBooks: [Book]
+    
     @State private var showingAddScreen: Bool = false
     
     @State private var showingStudents: Bool = false
@@ -24,22 +31,43 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(books) {book in
-                    NavigationLink(value: book) {
-                        HStack {
-                            EmojiRatingView(rating: book.rating)
-                            
-                            VStack(alignment: .leading) {
-                                Text(book.title)
-                                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                    .foregroundStyle(book.rating == 1 ? Color.red : Color.blue)
-                                Text(book.author)
-                                    .foregroundStyle(.secondary)
+                Section("Stephen Books") {
+                    ForEach(stephenBooks) {book in
+                        NavigationLink(value: book) {
+                            HStack {
+                                EmojiRatingView(rating: book.rating)
+                                
+                                VStack(alignment: .leading) {
+                                    Text(book.title)
+                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                        .foregroundStyle(book.rating == 1 ? Color.red : Color.blue)
+                                    Text(book.author)
+                                        .foregroundStyle(.secondary)
+                                }
                             }
                         }
                     }
+                    .onDelete(perform: deleteStephensBooks)
                 }
-                .onDelete(perform: deleteBooks)
+                
+                Section("All Books") {
+                    ForEach(books) {book in
+                        NavigationLink(value: book) {
+                            HStack {
+                                EmojiRatingView(rating: book.rating)
+                                
+                                VStack(alignment: .leading) {
+                                    Text(book.title)
+                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                        .foregroundStyle(book.rating == 1 ? Color.red : Color.blue)
+                                    Text(book.author)
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                    }
+                    .onDelete(perform: deleteBooks)
+                }
             }
             .navigationTitle("Bookworm")
             .navigationDestination(for: Book.self) { book in
@@ -71,6 +99,13 @@ struct ContentView: View {
     func deleteBooks(at offsets: IndexSet) {
         for offset in offsets {
             let book = books[offset]
+            modelContext.delete(book)
+        }
+    }
+    
+    func deleteStephensBooks(at offsets: IndexSet) {
+        for offset in offsets {
+            let book = stephenBooks[offset]
             modelContext.delete(book)
         }
     }
